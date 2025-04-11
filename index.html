@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> <!--titel van tablad-->
+    <title>My first website!</title>
+
+
+    <meta name="description" content="HTML for dummies">
+    <meta name="keywords" content="html, tutorial, dummie">
+    <meta name="Author" content="Nick">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    
+</head>
+
+<body> <!--tekst op pagina-->
+    <h1>Hey kut</h1> <!--grootste titel formaat-->
+
+    <hr>  <!--lijn voor opbreken tekst-->
+
+    <h2>test</h2> 
+    <h3>Internet voor sukkels</h3>
+
+    <br> <!--extra ruimte tussen regels-->
+
+    <p>leren voor coderen</p>
+    
+    <!--hyperlink info-->
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="homoo"> 
+        pizza <!--titel hyperlink op pagina--> <!--target is hoe die pagina opent, title is wat er verschijnt als je er overheen zweeft-->
+    </a>
+
+    <br>
+
+    <!--hyperlink naar andere website-->
+    <a href="page 2.html" target="_blank" title="werken"> 
+        Email 
+    </a>
+
+    <br>
+
+    <!--Afbeelding op website, src=source je bestand in de map, height of width voor afmetingen, alt=afgesproken tekst bij screen reader. title voor zweven over afbeelding-->
+    <img src="/HTML/images/EPIC.JPG" height="250" alt="This is epic" title="Epic!">
+    
+    <!--afbeelding als hyperlink-->
+    <a href="http://www.google.nl" target="_blank">
+    <img src="/HTML/images/Out of memes.JPG" height="250" alt="This is epic" title="Epic!">
+    </a>
+
+    <br>
+
+    <!--audio met controls, voeg audioplay toe voor standaard aan, loop voor looping-->
+    <audio controls src="HTML\Audio\Daytime Forest Bonfire.mp3"></audio>
+    
+    <br>
+
+    <!--audio met controls, met meerdere audio files-->
+    <audio controls loop>
+        <source src="/HTML/Audio/Daytime Forest Bonfire.mp3">
+        <source src="">
+        This browser does not html5 audio
+    </audio>
+    
+    <br>
+
+    <!--video uitleg mp4-->
+    <video controls src="/HTML/Video/93 Minecraft Things You’ll Probably Never See.mp4" width="500" >
+        This browser doenst support html5 video/audio
+    </video>
+
+    <!--Html text formatting-->
+    <p align="center">Dit is normale dag</p>
+    <p>Dit is <b>Dikgedrukt</b> dag</p>
+    <p>Dit is <i>schuine</i> dag</p>
+    <p>Dit is <big>grote</big> dag</p>
+    <p>Dit is <small>kleine</small> dag</p>
+    <p>Dit is <sub>subscript</sub> dag</p>
+    <p>Dit is <sup>superscript</sup> dag</p>
+    <p>Dit is <ins>onderstreept</ins> dag</p>
+    <p>Dit is <del>doorstreept</del> dag</p>
+    <p>Dit is <mark>gemarkeerd</mark> dag</p>
+
+    <br>
+
+    <!--list informatie-->
+    <H4>Unordered list</H4>
+    <ul>
+        <li>Shopping list</li>
+        <li>tomaten</li>
+    </ul>
+
+    <H4>Ordered list</H4>
+    <ol type="A">
+        <li>test</li>
+        <li>pizza</li>
+    </ol>
+
+    <H4>omschrijving list</H4>
+    <dl>
+        <dt>test</dt>
+        <dd>pizza</dd>
+        <dd>koken</dd>
+    </dl>
+
+    <br>
+
+    <!--tabellen-->
+    <H3>Rekensommetjes</H3>
+    <table bgcolor="black" >
+        <tr bgcolor="grey" align="center">
+            <th width="120">Saturday</th>
+            <th width="120">Sunday</th>
+        </tr>
+        <tr bgcolor="lightblue" align="center">
+            <td><i>8:00 tot 10:00</i></td>
+            <td><i>9:00 tot 12:00</i></td>
+        </tr>
+        <tr bgcolor="orange" align="center">
+            <td>Hallo</td>
+            <td>Hey</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!--span en div lijken op elkaar, span is voor tekst in stukken splitsen en div is voor stukken van document-->
+    <div style="background-color: grey;">
+    <p> 
+        <span style="color: red;"> ipsum dolor sit amet consectetur adipisicing elit.</span> Illo nulla magni at dolorum, dolores consequuntur hic neque magnam laborum dignissimos aperiam deserunt! Voluptates, dolor! Ipsum aliquid ea quia ex sint.
+    </p>
+    
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam, numquam a vero placeat reprehenderit quam dolores consequatur asperiores. Sequi fugiat ab ea iste a animi placeat, fuga ipsam. Doloribus.
+    </p>
+    </div>
+
+    <br>
+
+    <!--iframe content = frames voor reclame of google search bar etc of Document in document etc.-->
+
+    <iframe src="http://www.bing.com" frameborder="0" width="700" height="200"></iframe>
+    <br>
+    <iframe src="/HTML/reclame.html" frameborder="0" height="100" width="500"></iframe>
+
+    <br>
+
+    <!--bruikbare knoppen maken!!!-->
+    <a href="http://www.google.com" target="_blank">
+    <button align="center" style="background-color: darkred;border-radius: 5px;"> 
+        <p style="color: black;"> <b><i>Test me</i></b>
+         </p>
+    </button>
+    </a>
+
+    <br>
+
+    <!--knop met functionele javascript knop die tekst vervangt-->
+    <button onclick="doSomething()" style="background-color: rgb(17, 10, 10);border-radius: 5px;"> 
+       <p style="color: rgb(211, 195, 195);"> <b><i>Click me</i></b>
+        </p>
+    </button>
+    <p align="center" id="test">Hey
+        <script> 
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Opnieuw";
+        }
+        </script>
+    </p>
+
+    <br>
+    
+    <!--form elementen-->
+    <!--POST voor geheime info, GET voor search balk ofso-->
+    <form action="action_page.php" method="POST">
+
+        <div>
+            <label for="fname">Voornaam</label>
+            <input type="text" id="fname" name="fname" placeholder="Joe" required>
+        </div>
+        <br>        
+        <div>
+            <label for="lname">Achternaam</label>
+            <input type="text" id="fname" name="lname" placeholder="Johnson" required>
+        </div>
+        <br>        
+        <div>
+            <label for="passw">Wachtwoord</label>
+            <input type="password" id="pass" name="pass" placeholder="*****" required max="12">
+        </div>
+        <br>        
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="123@gmail.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Telefoonnummer</label>
+            <input type="tel" id="phone" name="phone" placeholder="06-12345678" required>
+        </div>
+        <br>
+        <div>
+            <label for="bdate">Bday</label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Aantal</label>
+            <input type="number" id="quantity" name="quantity" max="99" min="0" value="1" required>
+        </div>
+        <br>
+        <div>
+            <label for="title">Titel: </label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+
+        <div>
+            <label for="payment">Betalingsmethode:</label>
+            <select id="payment" name="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="debit">Debit</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
